@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Responsive Design</h1>
+            <p>Flexbox & Grid Layouts</p>
+        </header>
+
+        <!-- Navigation Bar (Flexbox) -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Services</a></li>
+                <li><a href="#"><i class="fas fa-image"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area (Grid) -->
+        <main class="main">
+            <!-- Featured Article -->
+            <article class="featured">
+                <h2>Welcome to Our Website</h2>
+                <p>This layout demonstrates the power of CSS Grid and Flexbox working together to create responsive designs. Resize your browser to see how the layout adapts to different screen sizes.</p>
+                <a href="#" class="btn">Learn More</a>
+            </article>
+
+            <!-- Cards Section (Flexbox) -->
+            <section class="cards">
+                <div class="card">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <h3>Mobile First</h3>
+                    <p>Our designs start with mobile devices in mind, then scale up for larger screens.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-th-large fa-3x"></i>
+                    <h3>Grid Layout</h3>
+                    <p>Using CSS Grid for complex two-dimensional layouts that are easy to maintain.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-arrows-alt-h fa-3x"></i>
+                    <h3>Flexbox</h3>
+                    <p>Flexbox helps with alignment and distribution of space in one dimension.</p>
+                </div>
+            </section>
+
+            <!-- Sidebar Content -->
+            <aside class="sidebar">
+                <h3>Latest News</h3>
+                <ul class="news-list">
+                    <li><a href="#">New responsive design workshop</a></li>
+                    <li><a href="#">CSS Grid updates in latest browsers</a></li>
+                    <li><a href="#">Flexbox tricks for better layouts</a></li>
+                    <li><a href="#">Upcoming web design conference</a></li>
+                </ul>
+                
+                <h3>Resources</h3>
+                <ul class="resources-list">
+                    <li><a href="#">CSS Tricks Guide to Grid</a></li>
+                    <li><a href="#">Flexbox Froggy Game</a></li>
+                    <li><a href="#">MDN Web Docs</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2023 Responsive Design Demo. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
