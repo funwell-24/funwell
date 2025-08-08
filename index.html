@@ -1,168 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn sustainable gardening practices with our guide to eco-friendly planting, water conservation, and organic pest control">
-    <meta name="keywords" content="sustainable gardening, organic gardening, water conservation, composting, native plants">
-    <meta name="author" content="Green Thumb Guides">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Sustainable Gardening Practices | Green Thumb Guides">
-    <meta property="og:description" content="Discover eco-friendly gardening techniques for a healthier planet">
-    <meta property="og:type" content="website">
-    
-    <title>Sustainable Gardening Practices | Green Thumb Guides</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Skip to Content Link -->
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <h1>JavaScript Fundamentals Assignment</h1>
     
-    <!-- Page Header -->
-    <header role="banner">
-        <h1>Sustainable Gardening Practices</h1>
-        <p>Cultivating a greener future, one garden at a time</p>
-    </header>
+    <!-- Part 1: Basic JavaScript -->
+    <section id="part1">
+        <h2>Part 1: Variables and Conditionals</h2>
+        <div class="input-group">
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" min="0">
+            <button id="checkAge">Check</button>
+        </div>
+        <p id="ageResult"></p>
+    </section>
     
-    <!-- Main Navigation -->
-    <nav role="navigation" aria-label="Main navigation">
-        <h2 class="visually-hidden">Main Navigation</h2>
-        <ul>
-            <li><a href="#water-conservation">Water Conservation</a></li>
-            <li><a href="#composting">Composting</a></li>
-            <li><a href="#native-plants">Native Plants</a></li>
-            <li><a href="#organic-pest">Organic Pest Control</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Main Content Area -->
-    <main id="main-content" role="main">
-        <!-- Introduction Section -->
-        <section aria-labelledby="intro-heading">
-            <h2 id="intro-heading">Welcome to Sustainable Gardening</h2>
-            <p>Discover how to create an environmentally friendly garden that supports local ecosystems while reducing your environmental impact.</p>
-            <p>Sustainable gardening offers numerous benefits:</p>
-            <ul>
-                <li>Reduces water consumption</li>
-                <li>Supports pollinators and wildlife</li>
-                <li>Decreases reliance on chemicals</li>
-                <li>Improves soil health naturally</li>
-            </ul>
-        </section>
+    <!-- Part 2: Functions -->
+    <section id="part2">
+        <h2>Part 2: Functions</h2>
+        <div class="input-group">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1">
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2">
+            <button id="calculate">Calculate Sum</button>
+        </div>
+        <p id="sumResult"></p>
         
-        <!-- Water Conservation Section -->
-        <section id="water-conservation" aria-labelledby="water-heading">
-            <h2 id="water-heading">Water Conservation Techniques</h2>
-            <article>
-                <h3>Smart Watering Practices</h3>
-                <p>Reduce your garden's water footprint with these effective strategies:</p>
-                
-                <h4>Key Methods:</h4>
-                <dl>
-                    <dt>Drip Irrigation</dt>
-                    <dd>Delivers water directly to plant roots with minimal evaporation</dd>
-                    
-                    <dt>Rainwater Harvesting</dt>
-                    <dd>Collect and store rainwater in barrels for garden use</dd>
-                    
-                    <dt>Mulching</dt>
-                    <dd>Organic mulch retains soil moisture and regulates temperature</dd>
-                </dl>
-                
-                <figure>
-                    <img src="rain-barrel.jpg" alt="A green rain barrel collecting water from a downspout" width="300" height="400">
-                    <figcaption>Rain barrels help conserve municipal water supplies</figcaption>
-                </figure>
-            </article>
-        </section>
-        
-        <!-- Composting Section -->
-        <section id="composting" aria-labelledby="compost-heading">
-            <h2 id="compost-heading">Composting Basics</h2>
-            <article>
-                <h3>Turning Waste into Garden Gold</h3>
-                <p>Composting reduces landfill waste while creating nutrient-rich soil amendments.</p>
-                
-                <h4>Composting Do's and Don'ts:</h4>
-                <ul>
-                    <li><strong>Do add:</strong> Vegetable scraps, coffee grounds, eggshells, yard waste</li>
-                    <li><strong>Don't add:</strong> Meat, dairy, oily foods, pet waste</li>
-                    <li>Maintain a 3:1 ratio of browns (carbon) to greens (nitrogen)</li>
-                    <li>Turn your pile regularly to aerate</li>
-                </ul>
-            </article>
-        </section>
-        
-        <!-- Native Plants Section -->
-        <section id="native-plants" aria-labelledby="native-heading">
-            <h2 id="native-heading">Benefits of Native Plants</h2>
-            <article>
-                <h3>Working With Nature</h3>
-                <p>Native plants are adapted to local conditions and support regional ecosystems.</p>
-                
-                <h4>Advantages of Native Plants:</h4>
-                <ol>
-                    <li>Require less water once established</li>
-                    <li>Need fewer fertilizers and pesticides</li>
-                    <li>Provide habitat for local wildlife</li>
-                    <li>Promote biodiversity</li>
-                    <li>Are naturally resistant to local pests</li>
-                </ol>
-            </article>
-        </section>
-        
-        <!-- Organic Pest Control Section -->
-        <section id="organic-pest" aria-labelledby="pest-heading">
-            <h2 id="pest-heading">Organic Pest Control</h2>
-            <article>
-                <h3>Natural Solutions for Common Problems</h3>
-                <p>Manage garden pests without harmful chemicals using these methods:</p>
-                
-                <table>
-                    <caption>Common Garden Pests and Organic Solutions</caption>
-                    <tr>
-                        <th>Pest</th>
-                        <th>Organic Control Method</th>
-                    </tr>
-                    <tr>
-                        <td>Aphids</td>
-                        <td>Ladybugs, neem oil spray, strong water blast</td>
-                    </tr>
-                    <tr>
-                        <td>Slugs</td>
-                        <td>Diatomaceous earth, copper tape, beer traps</td>
-                    </tr>
-                    <tr>
-                        <td>Tomato Hornworm</td>
-                        <td>Hand picking, Bacillus thuringiensis (Bt)</td>
-                    </tr>
-                </table>
-            </article>
-        </section>
-    </main>
+        <div class="input-group">
+            <label for="textToFormat">Enter text:</label>
+            <input type="text" id="textToFormat">
+            <button id="formatText">Format Text</button>
+        </div>
+        <p id="formattedText"></p>
+    </section>
     
-    <!-- Resources Aside -->
-    <aside role="complementary" aria-labelledby="resources-heading">
-        <h2 id="resources-heading">Further Reading</h2>
-        <ul>
-            <li><a href="https://www.epa.gov/sustainable-management-food/composting-home" target="_blank" rel="noopener noreferrer">EPA Composting Guide</a></li>
-            <li><a href="https://www.nwf.org/NativePlantFinder" target="_blank" rel="noopener noreferrer">Native Plant Finder</a></li>
-            <li><a href="https://xerces.org/pollinator-conservation" target="_blank" rel="noopener noreferrer">Pollinator Conservation Resources</a></li>
-        </ul>
-    </aside>
+    <!-- Part 3: Loops -->
+    <section id="part3">
+        <h2>Part 3: Loops</h2>
+        <button id="countdownBtn">Start Countdown</button>
+        <div id="countdownDisplay"></div>
+        
+        <button id="generateListBtn">Generate Number List</button>
+        <ul id="numberList"></ul>
+    </section>
     
-    <!-- Page Footer -->
-    <footer role="contentinfo">
-        <h2 class="visually-hidden">Footer Information</h2>
-        <p>&copy; 2025 Fabian. All rights reserved.</p>
-        <address>
-            Contact our gardening experts at <a href="mailto:funwell1@gmail.com">funwell1@gmail.com</a>
-        </address>
-        <p>Page last updated: <time datetime="2025-08-05">August 5, 2025</time></p>
-    </footer>
+    <!-- Part 4: DOM Manipulation -->
+    <section id="part4">
+        <h2>Part 4: DOM Manipulation</h2>
+        <div class="color-box" id="colorBox">Click me to change color!</div>
+        
+        <button id="addItemBtn">Add List Item</button>
+        <ul id="dynamicList"></ul>
+        
+        <div class="toggle-content">
+            <button id="toggleBtn">Toggle Content</button>
+            <p id="toggleText" class="hidden">This content can be toggled!</p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
