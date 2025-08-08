@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Understanding the CSS Box Model</h1>
+        <p>A practical demonstration of margins, padding, and borders</p>
+    </header>
+
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <h2>The CSS Box Model</h2>
+            <p>Every element in web design is a rectangular box. The CSS Box Model describes how these boxes are sized and spaced, consisting of: content, padding, borders, and margins.</p>
+            
+            <div class="box-model-visual">
+                <div class="margin-box">
+                    Margin
+                    <div class="border-box">
+                        Border
+                        <div class="padding-box">
+                            Padding
+                            <div class="content-box">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples-section">
+            <article class="card">
+                <h3>Margin Example</h3>
+                <p>Margins create space outside an element's border, pushing other elements away. This card has a 20px margin all around.</p>
+                <div class="margin-example"></div>
+            </article>
+
+            <article class="card">
+                <h3>Padding Example</h3>
+                <p>Padding creates space inside an element's border, between the border and content. This card has 15px padding.</p>
+                <div class="padding-example">Content area</div>
+            </article>
+
+            <article class="card">
+                <h3>Border Example</h3>
+                <p>Borders surround the padding and content. This card demonstrates different border styles.</p>
+                <div class="border-examples">
+                    <div class="border-dotted">Dotted</div>
+                    <div class="border-dashed">Dashed</div>
+                    <div class="border-solid">Solid</div>
+                </div>
+            </article>
+        </section>
+
+        <section class="box-sizing-section">
+            <h2>Box Sizing Property</h2>
+            <p>The <code>box-sizing</code> property controls how width and height are calculated:</p>
+            
+            <div class="box-sizing-examples">
+                <div class="content-box-example">
+                    <h4>content-box (default)</h4>
+                    <p>Width/height only apply to content. Padding and border are added.</p>
+                </div>
+                
+                <div class="border-box-example">
+                    <h4>border-box</h4>
+                    <p>Width/height include content, padding and border.</p>
+                </div>
+            </div>
+            
+            <button class="btn">Learn More</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 CSS Basics Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
