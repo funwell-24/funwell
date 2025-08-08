@@ -1,0 +1,267 @@
+/* CSS Basics & Box Model Demonstration */
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #3498db;
+    margin-bottom: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #2980b9;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Section Styles */
+.intro-section, .examples-section, .box-sizing-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2, .box-sizing-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+/* Box Model Visualization */
+.box-model-visual {
+    margin: 2rem auto;
+    width: 300px;
+}
+
+.margin-box {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.border-box {
+    background-color: #f39c12;
+    color: white;
+    padding: 1rem;
+    border: 10px solid #d35400;
+    text-align: center;
+}
+
+.padding-box {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.content-box {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Styles */
+.examples-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Example Boxes */
+.margin-example {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    margin: 20px;
+    border: 2px solid #8e44ad;
+}
+
+.padding-example {
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    padding: 15px;
+    border: 2px solid #16a085;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-examples {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.border-examples div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+.border-dotted {
+    border: 4px dotted #e74c3c;
+}
+
+.border-dashed {
+    border: 4px dashed #3498db;
+}
+
+.border-solid {
+    border: 4px solid #2ecc71;
+}
+
+/* Box Sizing Examples */
+.box-sizing-examples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.content-box-example, .border-box-example {
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.content-box-example {
+    background-color: #f1c40f;
+    border: 5px solid #f39c12;
+    box-sizing: content-box;
+    padding: 30px;
+}
+
+.border-box-example {
+    background-color: #e67e22;
+    border: 5px solid #d35400;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .examples-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .box-sizing-examples {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .examples-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
