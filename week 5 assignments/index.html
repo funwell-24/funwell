@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Fundamentals Assignment</h1>
+    
+    <!-- Part 1: Basic JavaScript -->
+    <section id="part1">
+        <h2>Part 1: Variables and Conditionals</h2>
+        <div class="input-group">
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" min="0">
+            <button id="checkAge">Check</button>
+        </div>
+        <p id="ageResult"></p>
+    </section>
+    
+    <!-- Part 2: Functions -->
+    <section id="part2">
+        <h2>Part 2: Functions</h2>
+        <div class="input-group">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1">
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2">
+            <button id="calculate">Calculate Sum</button>
+        </div>
+        <p id="sumResult"></p>
+        
+        <div class="input-group">
+            <label for="textToFormat">Enter text:</label>
+            <input type="text" id="textToFormat">
+            <button id="formatText">Format Text</button>
+        </div>
+        <p id="formattedText"></p>
+    </section>
+    
+    <!-- Part 3: Loops -->
+    <section id="part3">
+        <h2>Part 3: Loops</h2>
+        <button id="countdownBtn">Start Countdown</button>
+        <div id="countdownDisplay"></div>
+        
+        <button id="generateListBtn">Generate Number List</button>
+        <ul id="numberList"></ul>
+    </section>
+    
+    <!-- Part 4: DOM Manipulation -->
+    <section id="part4">
+        <h2>Part 4: DOM Manipulation</h2>
+        <div class="color-box" id="colorBox">Click me to change color!</div>
+        
+        <button id="addItemBtn">Add List Item</button>
+        <ul id="dynamicList"></ul>
+        
+        <div class="toggle-content">
+            <button id="toggleBtn">Toggle Content</button>
+            <p id="toggleText" class="hidden">This content can be toggled!</p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
