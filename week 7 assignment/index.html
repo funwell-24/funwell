@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <p>Combining CSS Animations with JavaScript Functions</p>
+    </header>
+
+    <main>
+        <!-- Part 1: CSS Animations -->
+        <section class="part-section" id="css-animations">
+            <h2>CSS3 Transitions & Animations</h2>
+            
+            <div class="animation-examples">
+                <div class="box hover-scale">Hover Scale</div>
+                <div class="box color-transition">Color Transition</div>
+                <div class="box spin-animation">Spin Animation</div>
+                <div class="box pulse-animation">Pulse Animation</div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="part-section" id="js-functions">
+            <h2>JavaScript Functions</h2>
+            
+            <div class="function-examples">
+                <div class="function-demo">
+                    <button id="calculate-btn">Calculate Area</button>
+                    <p>Rectangle Area: <span id="area-result"></span></p>
+                </div>
+                
+                <div class="function-demo">
+                    <button id="greet-btn">Get Greeting</button>
+                    <p id="greeting-result"></p>
+                </div>
+                
+                <div class="function-demo">
+                    <input type="number" id="number-input" placeholder="Enter a number">
+                    <button id="double-btn">Double It</button>
+                    <p>Result: <span id="double-result"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined CSS & JS -->
+        <section class="part-section" id="combined">
+            <h2>Combining CSS & JavaScript</h2>
+            
+            <div class="combined-examples">
+                <div class="animation-control">
+                    <button id="trigger-animation">Trigger Animation</button>
+                    <div class="box js-animated-box"></div>
+                </div>
+                
+                <div class="card-container">
+                    <div class="card" id="flip-card">
+                        <div class="card-front">Front</div>
+                        <div class="card-back">Back</div>
+                    </div>
+                    <button id="flip-btn">Flip Card</button>
+                </div>
+                
+                <div class="modal-control">
+                    <button id="open-modal">Open Modal</button>
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <h3>Welcome!</h3>
+                            <p>This modal appears with a CSS animation triggered by JavaScript.</p>
+                            <button id="close-modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
