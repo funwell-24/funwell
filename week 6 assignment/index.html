@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <!-- PART 1: Event Handling Example -->
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- PART 1 & 2: Interactive Element (Counter Game) -->
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <p>Current count: <span id="count">0</span></p>
+            <button id="increment">Increment</button>
+            <button id="decrement">Decrement</button>
+            <button id="reset">Reset</button>
+        </section>
+
+        <!-- PART 1 & 2: Interactive Element (FAQ Section) -->
+        <section id="faq-section">
+            <h2>FAQ Section</h2>
+            <div class="faq-item">
+                <div class="faq-question">What is JavaScript? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">JavaScript is a programming language that enables interactive web pages.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are event listeners? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Event listeners are functions that wait for specific events to occur, like clicks or keypresses.</div>
+            </div>
+        </section>
+
+        <!-- PART 3: Form Validation -->
+        <section id="form-section">
+            <h2>User Registration</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="name-error" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="email-error" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="password-error" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div id="confirm-password-error" class="error"></div>
+                </div>
+
+                <button type="submit">Register</button>
+                <div id="success-message" class="success-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
